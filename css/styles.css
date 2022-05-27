@@ -54,7 +54,7 @@ nav {
 }
 
 main {
-    background-image: url(../img-iframes/x-ray-of-teeth.jpg);
+    background-image: url(../img/x-ray-of-teeth.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 240%;
@@ -359,3 +359,4 @@ footer {
         padding: 5px 220px;
     }
 }
+
