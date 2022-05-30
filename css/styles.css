@@ -192,9 +192,6 @@ h5 {
     font-weight: bold;
 }
 
-.botonenviar {
-    padding: 5px 220px;
-}
 
 .tiempo {
     padding: 5px 15px;
@@ -339,19 +336,7 @@ footer {
         flex-wrap: nowrap;
         justify-content: center;
     }
-
-    .cuadromotivo {
-        padding: 5px 450px;
-    }
-
-    .botonenviar {
-        padding: 5px 550px;
-    }
-
-    .tiempo {
-        padding: 5px 400px;
-    }
-
+    
     iframe {
         max-width: 1000px;
         max-height: 1000px;
