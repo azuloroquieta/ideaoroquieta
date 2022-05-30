@@ -30,30 +30,6 @@ header {
     max-height: 60px;
 }
 
-/* nav {
-    text-align: right;
-    font-family: "MontserratRegular";
-    padding: 10px;
-    align-self: center;
-}
-
-.menu li {
-    display: inline-block;
-}
-
-.menu li a {
-    list-style-type: none;
-    background-color: #85bfcb;
-    text-decoration: none;
-    padding: 2px;
-    font-size: 13px
-} */
-
-/* .menu {
-    background-color: #85bfcb;
-    font-family: "MontserratRegular";
-    color: #2b337d;
-} */
 
 .menu a {
     background-color: #85bfcb;
