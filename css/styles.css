@@ -290,7 +290,11 @@ footer {
         margin: 80px 400px;
     }
 
-    .informacionvictoria, .titulotratamientos {
+    .informacionvictoria {
+        padding: 100px 50px;
+    }
+
+    .titulotratamientos {
         padding: 100px 50px;
     }
 
