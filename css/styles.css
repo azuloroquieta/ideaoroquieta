@@ -31,14 +31,9 @@ header {
 }
 
 
-.menu a {
-    background-color: #85bfcb;
+.menu {
     font-family: "MontserratRegular";
-    color: #2b337d;
     font-size: 20px;
-}
-
-.botonnav{
     color: #2b337d;
 }
 
@@ -57,12 +52,8 @@ header {
 
 main {
     background-image: url(../img/x-ray-of-teeth.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 240%;
+    background-size: cover;
     background-attachment: fixed;
-    padding-top: 100px;
-    padding-bottom: 250px;
 }
 
 h1 {
@@ -263,7 +254,7 @@ footer {
     }
 
     main {
-        background-size: 100%;
+        background-size: cover;
     }
 
 
