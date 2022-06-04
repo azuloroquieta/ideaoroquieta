@@ -30,7 +30,8 @@
                             <a class="nav-link active item" aria-current="page" href="/index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active item" aria-current="page" href="./acercademi.html">Acerca de mi</a>
+                            <a class="nav-link active item" aria-current="page" href="./acercademi.html">Acerca de
+                                mi</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active item" href="./tratamientos.html">Tratamientos</a>
@@ -49,25 +50,52 @@
     </header>
 
     <main class="contenidocobertura">
-        <section>
-            <article class="obraslogos animate__animated animate__fadeInUp">
-                <img src="../img/Aca-Salud_logo.jpg" alt="AcaSalud">
-                <img src="../img/omint.png" alt="OMINT">
-                <img src="../img/apm.png" alt="APM">
-                <img src="../img/sancor.png" alt="Sancor">
-                <img src="../img/consulmed.jpg" alt="Consulmed">
-                <img src="../img/dasuten.png" alt="DATUSEN">
-                <img src="../img/galeno.png" alt="Galeno">
-                <img src="../img/generarsalud.jpg" alt="GenerarSalud">
-                <img src="../img/osuomra.png" alt="OSUOMRA">
-                <img src="../img/osprera.jpg" alt="OSPRERA">
-                <img src="../img/prevencionsalud.jpg" alt="PrevencionSalud">
-                <img src="../img/ospatrones.jpg" alt="OSPatrones">
-                <img src="../img/serviciopenitenciarionacional.png" alt="ServicioPenitenciarioNacional">
-                <img src="../img/tvsalud.jpg" alt="TVSalud">
-                <img src="../img/cora.jpg" alt="CORA">
-            </article>
-        </section>
+
+        <div id="carouselExampleInterval" class="carousel slide obraslogos animate__animated animate__fadeInUp"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center" data-bs-interval="10000">
+                    <img src="../img/Aca-Salud_logo.jpg" class="w-40" alt="AcaSalud">
+                    <img src="../img/omint.png" class="w-40" alt="OMINT">
+                    <img src="../img/apm.png" class="w-40" alt="APM">
+                </div>
+
+                <div class="carousel-item text-center" data-bs-interval="2000">
+                    <img src="../img/sancor.png" class="w-40" alt="Sancor">
+                    <img src="../img/consulmed.jpg" class="w-40" alt="Consulmed">
+                    <img src="../img/galeno.png" class="w-40" alt="Galeno">
+                </div>
+
+                <div class="carousel-item text-center">
+                    <img src="../img/dasuten.png" class="w-40" alt="DATUSEN">
+                    <img src="../img/generarsalud.jpg" class="w-40" alt="GenerarSalud"> <img src="../img/osuomra.png"
+                        class="w-40" alt="OSUOMRA">
+                </div>
+
+                <div class="carousel-item text-center">
+                    <img src="../img/osprera.jpg" class="w-40" alt="OSPRERA">
+                    <img src="../img/prevencionsalud.jpg" class="w-40" alt="PrevencionSalud">
+                    <img src="../img/ospatrones.jpg" class="w-40" alt="OSPatrones">
+                </div>
+
+                <div class="carousel-item text-center">
+                    <img src="../img/serviciopenitenciarionacional.png" class="w-40"
+                        alt="Servicio Penitenciario Nacional">
+                    <img src="../img/tvsalud.jpg" class="w-40" alt="TV Salud">
+                    <img src="../img/cora.jpg" class="w-40" alt="CORA">
+                </div>
+            </div>
+            <button class="carousel-control-prev carusel" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </main>
 
     <footer>
