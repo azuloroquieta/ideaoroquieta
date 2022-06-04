@@ -290,9 +290,9 @@ footer {
         margin: 80px 400px;
     }
 
-.informacionvictoria{
-    padding: 100px 50px;
-}
+    .informacionvictoria, .titulotratamientos {
+        padding: 100px 50px;
+    }
 
     .obraslogos img {
         padding: 10px 10px;
@@ -317,7 +317,7 @@ footer {
         flex-wrap: nowrap;
         justify-content: center;
     }
-    
+
     iframe {
         max-width: 1000px;
         max-height: 1000px;
