@@ -30,13 +30,11 @@ header .menu {
   font-size: 20px;
   color: #2b337d;
 }
-
-.item {
+header .item {
   background-color: #85bfcb;
   transition: all 0.5s;
 }
-
-.item:hover {
+header .item:hover {
   font-size: 19px;
 }
 
@@ -74,8 +72,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
-h3 {
+footer h3 {
   font-family: "MontserratItalic";
   font-weight: bold;
   color: #2b337d;
@@ -111,29 +108,17 @@ h5 {
   margin: 50px 80px;
 }
 
-.obraslogos img {
-  border-radius: 20px;
-  height: 150px;
-  width: 250px;
-}
-
 .obraslogos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
 .obraslogos img {
+  height: 150px;
+  width: 250px;
   padding: 10px 10px;
   border-radius: 50px;
-}
-
-.procesos img {
-  border-radius: 20px;
-  height: 320px;
-  width: 230px;
-  margin: 50px 10px;
 }
 
 .procesos {
@@ -142,13 +127,11 @@ h5 {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.ymuchos {
-  text-align: center;
-  font-family: "MontserratRegular";
-  font-weight: bold;
-  font-size: 65px;
-  color: #2b337d;
+.procesos img {
+  border-radius: 20px;
+  height: 320px;
+  width: 230px;
+  margin: 50px 10px;
 }
 
 .nombre,
@@ -291,25 +274,26 @@ footer {
     padding: 200px 50px;
   }
 
-  .procesos img {
-    border-radius: 20px;
-    height: 320px;
-    width: 230px;
-  }
-
   .procesos {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
   }
+  .procesos img {
+    border-radius: 20px;
+    height: 320px;
+    width: 230px;
+  }
 
-  iframe {
+  .formulariocontacto {
+    padding: 25px 50px;
+  }
+  .formulariocontacto iframe {
     max-width: 1000px;
     max-height: 1000px;
   }
-
-  .mapa {
-    padding: 5px 220px;
+  .formulariocontacto .mapa {
+    padding: 5px 170px;
   }
 }/*# sourceMappingURL=styles.css.map */

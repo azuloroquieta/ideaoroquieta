@@ -1,0 +1,332 @@
+@import 'variables';
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "MontserratRegular";
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "MontserratItalic";
+    src: url(../fonts/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+header {
+    color: $color-principal;
+    text-align: left;
+    background-color: #85bfcb;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    .logo {
+        max-width: 110px;
+        max-height: 60px;
+    }
+
+    .menu {
+        font-family: "MontserratRegular";
+        font-size: 20px;
+        color: $color-principal;
+    }
+
+    .item {
+        background-color: $color-secundario;
+        transition: all 0.5s;
+    }
+
+    .item:hover {
+        font-size: 19px;
+    }
+}
+
+.presentacion {
+    padding: 150px 50px;
+}
+
+main {
+    background-image: url(../img/x-ray-of-teeth.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    font-family: "MontserratRegular";
+    font-weight: bold;
+    font-size: 70px;
+    color: $color-principal;
+}
+
+h2 {
+    font-family: "MontserratItalic";
+    text-align: center;
+    font-weight: normal;
+    font-size: 50px;
+    color: $color-principal;
+}
+
+footer {
+    background-color: $color-secundario;
+    font-family: "MontserratRegular";
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    h3 {
+        font-family: "MontserratItalic";
+        font-weight: bold;
+        color: $color-principal;
+        font-size: 20px;
+        text-align: start;
+        padding: 20px;
+    }
+}
+
+
+.redes {
+    p {
+        a {
+            padding: 10px;
+        }
+    }
+}
+
+
+.horarios {
+    text-align: end;
+}
+
+h5 {
+    color: gray;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.textoacerca {
+    color: black;
+    font-weight: bold;
+    font-family: "MontserratItalic";
+    text-align: center;
+    font-size: 15px;
+    margin: 7px;
+}
+
+.victoria {
+    margin: 50px 80px;
+}
+
+
+.obraslogos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    img {
+        height: 150px;
+        width: 250px;
+        padding: 10px 10px;
+        border-radius: 50px;
+    }
+
+}
+
+.procesos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+        border-radius: 20px;
+        height: 320px;
+        width: 230px;
+        margin: 50px 10px;
+    }
+}
+
+.nombre,
+.email,
+.tipodeconsul,
+.terminos {
+    font-family: "MontserratItalic";
+    color: $color-principal;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cuadromotivo {
+    padding: 5px 130px;
+}
+
+.horariotitulo,
+.horarios {
+    font-family: "MontserratItalic";
+    color: $color-principal;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.tiempo {
+    padding: 5px 15px;
+}
+
+iframe {
+    max-width: 400px;
+    max-height: 350px;
+    margin: 5px 40px;
+}
+
+.grilla1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 0.25fr 0.25;
+    grid-template-areas: "header "
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media screen and (min-width:#{$desktop}) {
+
+    .grilla1 {
+        display: grid;
+        grid-template-columns: 0.25fr 1fr 0.50fr;
+        grid-template-rows: 0.25fr auto 0.25fr;
+        grid-template-areas: "header header header"
+            "main main main"
+            "footer footer footer";
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .logo {
+        max-width: 170px;
+        min-height: 70px;
+    }
+
+    .menu {
+        li {
+            a {
+                padding: 15px;
+                font-size: 15px;
+                color: $color-principal;
+            }
+        }
+    }
+
+    .presentacion {
+        padding: 250px 150px;
+    }
+
+    main {
+        background-size: cover;
+    }
+
+
+    footer {
+        background-color: $color-secundario;
+        font-family: "MontserratRegular";
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 100px;
+    }
+
+    h3 {
+        align-self: center;
+    }
+
+    .redes {
+        align-self: center;
+    }
+
+    .textoacerca {
+        font-size: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .victoria {
+        margin: 80px 400px;
+    }
+
+    .informacionvictoria {
+        padding: 100px 50px;
+    }
+
+    .titulotratamientos {
+        padding: 120px 70px;
+    }
+
+    .obraslogos img {
+        padding: 10px 10px;
+        border-radius: 50px;
+    }
+
+    .contenidocobertura {
+        padding: 200px 50px;
+
+    }
+
+    .procesos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        img {
+            border-radius: 20px;
+            height: 320px;
+            width: 230px;
+        }
+    }
+
+    .formulariocontacto {
+        padding: 25px 50px;
+
+        iframe {
+            max-width: 1000px;
+            max-height: 1000px;
+        }
+
+        .mapa {
+            padding: 5px 170px;
+        }
+    }
+}
