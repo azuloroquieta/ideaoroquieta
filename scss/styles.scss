@@ -1,4 +1,9 @@
 @import 'variables';
+@import 'mixins';
+
+@function color($color-name) {
+    @return map-get($colores, $color-name);
+}
 
 * {
     margin: 0%;
@@ -17,32 +22,32 @@
 }
 
 header {
-    color: $color-principal;
+    color: map-get($colores, color-principal);
     text-align: left;
-    background-color: #85bfcb;
+    background-color: map-get($colores, color-secundario);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
 
     .logo {
-        max-width: 110px;
+        max-width: $tamaño-grande;
         max-height: 60px;
     }
 
     .menu {
         font-family: "MontserratRegular";
-        font-size: 20px;
-        color: $color-principal;
+        font-size: $tamaño-medio;
+        color: map-get($colores, color-principal);
     }
 
     .item {
-        background-color: $color-secundario;
+        background-color: map-get($colores, color-secundario);
         transition: all 0.5s;
     }
 
     .item:hover {
-        font-size: 19px;
+        font-size: $tamaño-medio;
     }
 }
 
@@ -61,19 +66,18 @@ h1 {
     font-family: "MontserratRegular";
     font-weight: bold;
     font-size: 70px;
-    color: $color-principal;
+    color: map-get($colores, color-texto);
 }
 
 h2 {
+    @extend h1;
     font-family: "MontserratItalic";
-    text-align: center;
     font-weight: normal;
     font-size: 50px;
-    color: $color-principal;
 }
 
 footer {
-    background-color: $color-secundario;
+    background-color: map-get($colores, color-secundario);
     font-family: "MontserratRegular";
     display: flex;
     flex-direction: row;
@@ -83,10 +87,10 @@ footer {
     h3 {
         font-family: "MontserratItalic";
         font-weight: bold;
-        color: $color-principal;
-        font-size: 20px;
+        font-size: $tamaño-medio;
+        color: map-get($colores, color-principal);
         text-align: start;
-        padding: 20px;
+        padding: $tamaño-medio;
     }
 }
 
@@ -94,7 +98,7 @@ footer {
 .redes {
     p {
         a {
-            padding: 10px;
+            padding: $tamaño-chico;
         }
     }
 }
@@ -105,13 +109,13 @@ footer {
 }
 
 h5 {
-    color: gray;
-    padding: 10px;
-    font-size: 10px;
+    color: map-get($colores, color-footer);
+    padding: $tamaño-chico;
+    font-size:$tamaño-chico;
 }
 
 .textoacerca {
-    color: black;
+    color: map-get($colores, color-acercademi);
     font-weight: bold;
     font-family: "MontserratItalic";
     text-align: center;
@@ -133,7 +137,7 @@ h5 {
     img {
         height: 150px;
         width: 250px;
-        padding: 10px 10px;
+        padding: $tamaño-chico $tamaño-chico;
         border-radius: 50px;
     }
 
@@ -146,10 +150,10 @@ h5 {
     justify-content: center;
 
     img {
-        border-radius: 20px;
+        border-radius: $tamaño-medio;
         height: 320px;
         width: 230px;
-        margin: 50px 10px;
+        margin: 50px $tamaño-chico;
     }
 }
 
@@ -158,8 +162,8 @@ h5 {
 .tipodeconsul,
 .terminos {
     font-family: "MontserratItalic";
-    color: $color-principal;
-    margin: 20px;
+    color: map-get($colores, color-principal);
+    margin: $tamaño-medio;
     text-align: center;
     font-weight: bold;
 }
@@ -168,12 +172,11 @@ h5 {
     padding: 5px 130px;
 }
 
-.horariotitulo,
 .horarios {
     font-family: "MontserratItalic";
-    color: $color-principal;
+    color: map-get($colores, color-principal);
     text-align: center;
-    padding-top: 10px;
+    padding-top: $tamaño-chico;
     font-weight: bold;
 }
 
@@ -241,7 +244,7 @@ footer {
             a {
                 padding: 15px;
                 font-size: 15px;
-                color: $color-principal;
+                color: map-get($colores, color-principal);
             }
         }
     }
@@ -256,7 +259,7 @@ footer {
 
 
     footer {
-        background-color: $color-secundario;
+        background-color: map-get($colores, color-secundario);
         font-family: "MontserratRegular";
         display: flex;
         flex-direction: column;
@@ -268,16 +271,12 @@ footer {
         font-size: 100px;
     }
 
-    h3 {
-        align-self: center;
-    }
-
-    .redes {
+    .redes , h3{
         align-self: center;
     }
 
     .textoacerca {
-        font-size: 20px;
+        font-size: $tamaño-medio;
         margin-left: 100px;
         margin-right: 100px;
     }
@@ -295,7 +294,7 @@ footer {
     }
 
     .obraslogos img {
-        padding: 10px 10px;
+        padding: $tamaño-chico $tamaño-chico;
         border-radius: 50px;
     }
 
@@ -311,7 +310,7 @@ footer {
         justify-content: center;
 
         img {
-            border-radius: 20px;
+            border-radius: $tamaño-medio;
             height: 320px;
             width: 230px;
         }

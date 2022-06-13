@@ -35,7 +35,7 @@ header .item {
   transition: all 0.5s;
 }
 header .item:hover {
-  font-size: 19px;
+  font-size: 20px;
 }
 
 .presentacion {
@@ -48,20 +48,18 @@ main {
   background-attachment: fixed;
 }
 
-h1 {
+h1, h2 {
   text-align: center;
   font-family: "MontserratRegular";
   font-weight: bold;
   font-size: 70px;
-  color: #2b337d;
+  color: #242b6a;
 }
 
 h2 {
   font-family: "MontserratItalic";
-  text-align: center;
   font-weight: normal;
   font-size: 50px;
-  color: #2b337d;
 }
 
 footer {
@@ -75,8 +73,8 @@ footer {
 footer h3 {
   font-family: "MontserratItalic";
   font-weight: bold;
-  color: #2b337d;
   font-size: 20px;
+  color: #2b337d;
   text-align: start;
   padding: 20px;
 }
@@ -90,7 +88,7 @@ footer h3 {
 }
 
 h5 {
-  color: gray;
+  color: darken grey, 20%;
   padding: 10px;
   font-size: 10px;
 }
@@ -149,7 +147,6 @@ h5 {
   padding: 5px 130px;
 }
 
-.horariotitulo,
 .horarios {
   font-family: "MontserratItalic";
   color: #2b337d;
@@ -235,15 +232,11 @@ footer {
     justify-content: center;
   }
 
-  h1 {
+  h1, h2 {
     font-size: 100px;
   }
 
-  h3 {
-    align-self: center;
-  }
-
-  .redes {
+  .redes, h3 {
     align-self: center;
   }
 

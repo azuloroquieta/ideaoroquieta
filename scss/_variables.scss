@@ -1,5 +1,7 @@
-$color-principal: #2b337d;
-$color-secundario:#85bfcb;
-
 $desktop:1024px;
 
+$colores:(color-principal:#2b337d, color-secundario:#85bfcb, color-texto:darken(#2b337d, 5%), color-footer:darken (grey, 20%), color-acercademi:black);
+
+$tamaño-chico : 10px;
+$tamaño-medio : 20px;
+$tamaño-grande : 110px;
