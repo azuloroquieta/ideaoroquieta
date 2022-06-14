@@ -25,6 +25,12 @@ header .logo {
   max-width: 110px;
   max-height: 60px;
 }
+@media (min-width: 1024px) {
+  header .logo {
+    max-width: 170px;
+    min-height: 70px;
+  }
+}
 header .menu {
   font-family: "MontserratRegular";
   font-size: 20px;
@@ -41,6 +47,11 @@ header .item:hover {
 .presentacion {
   padding: 150px 50px;
 }
+@media (min-width: 1024px) {
+  .presentacion {
+    padding: 250px 150px;
+  }
+}
 
 main {
   background-image: url(../img/x-ray-of-teeth.jpg);
@@ -54,6 +65,11 @@ h1, h2 {
   font-weight: bold;
   font-size: 70px;
   color: #242b6a;
+}
+@media (min-width: 1024px) {
+  h1, h2 {
+    font-size: 100px;
+  }
 }
 
 h2 {
@@ -101,9 +117,21 @@ h5 {
   font-size: 15px;
   margin: 7px;
 }
+@media (min-width: 1024px) {
+  .textoacerca {
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
 
 .victoria {
   margin: 50px 80px;
+}
+@media (min-width: 1024px) {
+  .victoria {
+    margin: 80px 400px;
+  }
 }
 
 .obraslogos {
@@ -118,6 +146,12 @@ h5 {
   padding: 10px 10px;
   border-radius: 50px;
 }
+@media (min-width: 1024px) {
+  .obraslogos img {
+    padding: 10px 10px;
+    border-radius: 50px;
+  }
+}
 
 .procesos {
   display: flex;
@@ -130,6 +164,13 @@ h5 {
   height: 320px;
   width: 230px;
   margin: 50px 10px;
+}
+@media (min-width: 1024px) {
+  .procesos img {
+    border-radius: 20px;
+    height: 320px;
+    width: 230px;
+  }
 }
 
 .nombre,
@@ -183,40 +224,29 @@ main {
 footer {
   grid-area: footer;
 }
-
-@media screen and (min-width: 1024px) {
-  .grilla1 {
+@media (min-width: 1024px) {
+  footer .grilla1 {
     display: grid;
     grid-template-columns: 0.25fr 1fr 0.5fr;
     grid-template-rows: 0.25fr auto 0.25fr;
     grid-template-areas: "header header header" "main main main" "footer footer footer";
   }
-
-  header {
+  footer header {
     grid-area: header;
   }
-
-  main {
+  footer main {
     grid-area: main;
   }
-
-  footer {
+  footer footer {
     grid-area: footer;
   }
+}
 
-  .logo {
-    max-width: 170px;
-    min-height: 70px;
-  }
-
+@media screen and (min-width: 1024px) {
   .menu li a {
     padding: 15px;
     font-size: 15px;
     color: #2b337d;
-  }
-
-  .presentacion {
-    padding: 250px 150px;
   }
 
   main {
@@ -232,22 +262,9 @@ footer {
     justify-content: center;
   }
 
-  h1, h2 {
-    font-size: 100px;
-  }
-
-  .redes, h3 {
+  .redes,
+h3 {
     align-self: center;
-  }
-
-  .textoacerca {
-    font-size: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-
-  .victoria {
-    margin: 80px 400px;
   }
 
   .informacionvictoria {
@@ -258,25 +275,8 @@ footer {
     padding: 120px 70px;
   }
 
-  .obraslogos img {
-    padding: 10px 10px;
-    border-radius: 50px;
-  }
-
   .contenidocobertura {
     padding: 200px 50px;
-  }
-
-  .procesos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-  .procesos img {
-    border-radius: 20px;
-    height: 320px;
-    width: 230px;
   }
 
   .formulariocontacto {
