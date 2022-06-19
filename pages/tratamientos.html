@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Encontrá los tratamientos que te brindamos">
-    <meta name="keywords" content="tratamientos, endodoncia, odontopediatria, periodoncia, urgencias, Tratamientos odontologicos en Trelew, Dentista en Trelew, Odontologa en Trelew, Odontologia en Trelew, Odontopedriatra en Trelew, Odontopedriatra en Trelew">
+    <meta name="keywords"
+        content="tratamientos, endodoncia, odontopediatria, periodoncia, urgencias, Tratamientos odontologicos en Trelew, Dentista en Trelew, Odontologa en Trelew, Odontologia en Trelew, Odontopedriatra en Trelew, Odontopedriatra en Trelew">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -51,19 +52,46 @@
     </header>
 
     <main>
-        <div class="animate__animated animate__fadeInUp titulotratamientos">
+        <div class="animate__animated animate__fadeInUp titulotratamientos procesos">
             <h2>Tratamientos que vas a encontrar</h2>
             <section>
                 <article>
-                    <div class="procesos">
-                        <img src="../img/endodoncia.png" alt="endodoncia">
-                        <img src="../img/odontopediatria.png" alt="odontopediatria">
-                        <img src="../img/periodoncia.png" alt="periodoncia">
-                        <img src="../img/urgencias.png" alt="urgencias">
+                    <div id="carouselExampleInterval"
+                        class="carousel slide animate__animated animate__fadeInUp procesos" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active text-center" data-bs-interval="10000">
+                                <img src="../img/endodoncia.png" class="w-90 h-100" alt="Endodoncia">
+
+                            </div>
+
+                            <div class="carousel-item text-center" data-bs-interval="2000">
+                                <img src="../img/odontopediatria.png" class="w-90 h-100" alt="Odontopediatria">
+                            </div>
+
+                            <div class="carousel-item text-center" data-bs-interval="2000">
+                                <img src="../img/periodoncia.png" class="w-90 h-100" alt="Periodoncia">
+                            </div>
+
+                            <div class="carousel-item text-center" data-bs-interval="2000">
+                                <img src="../img/urgencias.png" class="w-90 h-100" alt="Urgencias">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev carusel" type="button"
+                            data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                     <h2>y muchos más</h2>
                 </article>
             </section>
+        </div>
     </main>
 
     <footer>
