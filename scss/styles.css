@@ -59,16 +59,31 @@ main {
   background-attachment: fixed;
 }
 
-h1, h2 {
+.botonwhatsApp a img {
+  width: 40px;
+  bottom: 10px;
+  right: 10px;
+  position: fixed;
+}
+@media (min-width: 1024px) {
+  .botonwhatsApp a img {
+    width: 60px;
+    bottom: 20px;
+    right: 10px;
+    position: fixed;
+  }
+}
+
+h1, .acercademititulo, h2 {
   text-align: center;
   font-family: "MontserratRegular";
   font-weight: bold;
-  font-size: 70px;
+  font-size: 60px;
   color: #242b6a;
 }
 @media (min-width: 1024px) {
-  h1, h2 {
-    font-size: 100px;
+  h1, .acercademititulo, h2 {
+    font-size: 95px;
   }
 }
 
@@ -114,14 +129,39 @@ h5 {
   font-weight: bold;
   font-family: "MontserratItalic";
   text-align: center;
-  font-size: 15px;
-  margin: 7px;
+  font-size: 14px;
+  margin: 0px;
+  padding: 12px;
 }
 @media (min-width: 1024px) {
   .textoacerca {
     font-size: 20px;
     margin-left: 100px;
     margin-right: 100px;
+  }
+}
+
+.acercademititulo {
+  font-size: 50px;
+  padding-top: 40px;
+}
+@media (min-width: 1024px) {
+  .acercademititulo {
+    font-size: 70px;
+  }
+}
+
+.perfil {
+  border-radius: 50%;
+  max-width: 200px;
+  max-height: 200px;
+  padding: 20px;
+}
+@media (min-width: 1024px) {
+  .perfil {
+    border-radius: 50%;
+    max-width: 400px;
+    max-height: 400px;
   }
 }
 
@@ -138,7 +178,7 @@ h5 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 .obraslogos img {
   height: 150px;
@@ -168,8 +208,8 @@ h5 {
 @media (min-width: 1024px) {
   .procesos img {
     border-radius: 20px;
-    height: 320px;
-    width: 230px;
+    height: 300px;
+    width: 210px;
   }
 }
 
@@ -185,7 +225,12 @@ h5 {
 }
 
 .cuadromotivo {
-  padding: 5px 130px;
+  padding: 5px 60px;
+}
+@media (min-width: 1024px) {
+  .cuadromotivo {
+    padding: 5px 100px;
+  }
 }
 
 .horarios {
@@ -201,9 +246,15 @@ h5 {
 }
 
 iframe {
-  max-width: 400px;
-  max-height: 350px;
-  margin: 5px 40px;
+  width: 450px;
+  height: 250px;
+}
+@media (min-width: 1024px) {
+  iframe {
+    width: 700px;
+    height: 550px;
+    padding: 15px;
+  }
 }
 
 .grilla1 {
@@ -268,7 +319,7 @@ h3 {
   }
 
   .informacionvictoria {
-    padding: 100px 50px;
+    padding: 50px 50px;
   }
 
   .titulotratamientos {
@@ -277,16 +328,5 @@ h3 {
 
   .contenidocobertura {
     padding: 200px 50px;
-  }
-
-  .formulariocontacto {
-    padding: 25px 50px;
-  }
-  .formulariocontacto iframe {
-    max-width: 1000px;
-    max-height: 1000px;
-  }
-  .formulariocontacto .mapa {
-    padding: 5px 170px;
   }
 }/*# sourceMappingURL=styles.css.map */
