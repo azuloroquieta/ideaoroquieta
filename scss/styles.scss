@@ -102,6 +102,7 @@ h1 {
     }
 }
 
+
 h2 {
     @extend h1;
     font-family: "MontserratItalic";
@@ -117,15 +118,23 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
 
-    h3 {
-        font-family: "MontserratItalic";
-        font-weight: bold;
-        font-size: $tamaño-medio;
-        color: map-get($colores, color-principal);
-        text-align: start;
-        padding: $tamaño-medio;
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
+
+h3 {
+    font-family: "MontserratItalic";
+    font-weight: bold;
+    font-size: $tamaño-medio;
+    color: map-get($colores, color-principal);
+    text-align: start;
+    padding: $tamaño-medio;
+}
+
 
 
 .redes {
@@ -163,7 +172,7 @@ h5 {
     }
 }
 
-.acercademititulo{
+.acercademititulo {
     @extend h1;
     font-size: 50px;
     padding-top: 40px;
@@ -236,6 +245,16 @@ h5 {
     }
 }
 
+.contactotitulo {
+    font-size: 40px;
+
+    @include desktop {
+        padding: 10px;
+        font-size: 60px;
+    }
+
+}
+
 .nombre,
 .email,
 .tipodeconsul,
@@ -248,11 +267,11 @@ h5 {
 }
 
 .cuadromotivo {
-padding: 5px 60px;
+    padding: 5px 60px;
 
-@include desktop{
-    padding: 5px 100px;
-}
+    @include desktop {
+        padding: 5px 100px;
+    }
 
 }
 
@@ -264,16 +283,14 @@ padding: 5px 60px;
     font-weight: bold;
 }
 
-.tiempo {
-    padding: 5px 15px;
-}
+iframe {
+    width: 350px;
+    height: 150px;
+    padding: 10px 2px;
 
-iframe{
-    width: 450px; 
-    height: 250px;
-    @include desktop{
-        width:700px; 
-        height:550px;
+    @include desktop {
+        width: 700px;
+        height: 550px;
         padding: 15px;
     }
 }
@@ -323,29 +340,51 @@ footer {
     }
 }
 
+.titulotratamientos {
+    padding: 40px 20px;
+
+    @include desktop {
+        padding: 80px 70px;
+    }
+}
+
+.informacionvictoria {
+    padding: 15px 25px;
+
+    @include desktop {
+        padding: 50px 50px;
+    }
+
+}
+
+.contenidocobertura {
+    padding: 80px 25px;
+
+    @include desktop {
+        padding: 280px 50px;
+    }
+
+}
+
+.formulariocontacto {
+    padding: 10px 25px;
+
+    @include desktop {
+        padding: 60px 50px;
+    }
+
+}
+
 @media screen and (min-width:#{$desktop}) {
 
     .menu {
         li {
             a {
                 padding: 15px;
-                font-size: 15px;
+                font-size: 18px;
                 color: map-get($colores, color-principal);
             }
         }
-    }
-
-    main {
-        background-size: cover;
-    }
-
-    footer {
-        background-color: map-get($colores, color-secundario);
-        font-family: "MontserratRegular";
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
     .redes,
@@ -353,17 +392,4 @@ footer {
         align-self: center;
     }
 
-    .informacionvictoria {
-        padding: 50px 50px;
-    }
-
-    .titulotratamientos {
-        padding: 120px 70px;
-    }
-
-    .contenidocobertura {
-        padding: 200px 50px;
-
-    }
-    
 }

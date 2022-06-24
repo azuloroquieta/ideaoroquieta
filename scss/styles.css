@@ -101,7 +101,16 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-footer h3 {
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+h3 {
   font-family: "MontserratItalic";
   font-weight: bold;
   font-size: 20px;
@@ -213,6 +222,16 @@ h5 {
   }
 }
 
+.contactotitulo {
+  font-size: 40px;
+}
+@media (min-width: 1024px) {
+  .contactotitulo {
+    padding: 10px;
+    font-size: 60px;
+  }
+}
+
 .nombre,
 .email,
 .tipodeconsul,
@@ -241,13 +260,10 @@ h5 {
   font-weight: bold;
 }
 
-.tiempo {
-  padding: 5px 15px;
-}
-
 iframe {
-  width: 450px;
-  height: 250px;
+  width: 350px;
+  height: 150px;
+  padding: 10px 2px;
 }
 @media (min-width: 1024px) {
   iframe {
@@ -293,40 +309,51 @@ footer {
   }
 }
 
+.titulotratamientos {
+  padding: 40px 20px;
+}
+@media (min-width: 1024px) {
+  .titulotratamientos {
+    padding: 80px 70px;
+  }
+}
+
+.informacionvictoria {
+  padding: 15px 25px;
+}
+@media (min-width: 1024px) {
+  .informacionvictoria {
+    padding: 50px 50px;
+  }
+}
+
+.contenidocobertura {
+  padding: 80px 25px;
+}
+@media (min-width: 1024px) {
+  .contenidocobertura {
+    padding: 280px 50px;
+  }
+}
+
+.formulariocontacto {
+  padding: 10px 25px;
+}
+@media (min-width: 1024px) {
+  .formulariocontacto {
+    padding: 60px 50px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .menu li a {
     padding: 15px;
-    font-size: 15px;
+    font-size: 18px;
     color: #2b337d;
-  }
-
-  main {
-    background-size: cover;
-  }
-
-  footer {
-    background-color: #85bfcb;
-    font-family: "MontserratRegular";
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 
   .redes,
 h3 {
     align-self: center;
-  }
-
-  .informacionvictoria {
-    padding: 50px 50px;
-  }
-
-  .titulotratamientos {
-    padding: 120px 70px;
-  }
-
-  .contenidocobertura {
-    padding: 200px 50px;
   }
 }/*# sourceMappingURL=styles.css.map */
