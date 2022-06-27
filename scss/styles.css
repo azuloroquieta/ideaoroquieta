@@ -74,7 +74,7 @@ main {
   }
 }
 
-h1, .acercademititulo, h2 {
+h1, .textotratamiento, .acercademititulo, h2 {
   text-align: center;
   font-family: "MontserratRegular";
   font-weight: bold;
@@ -82,7 +82,7 @@ h1, .acercademititulo, h2 {
   color: #242b6a;
 }
 @media (min-width: 1024px) {
-  h1, .acercademititulo, h2 {
+  h1, .textotratamiento, .acercademititulo, h2 {
     font-size: 95px;
   }
 }
@@ -318,6 +318,10 @@ footer {
   }
 }
 
+.textotratamiento {
+  font-size: 72px;
+}
+
 .informacionvictoria {
   padding: 15px 25px;
 }
@@ -328,11 +332,20 @@ footer {
 }
 
 .contenidocobertura {
-  padding: 80px 25px;
+  padding: 40px 25px;
 }
 @media (min-width: 1024px) {
   .contenidocobertura {
-    padding: 280px 50px;
+    padding: 210px 50px;
+  }
+}
+
+.titulocoberturas {
+  padding: 10px 25px;
+}
+@media (min-width: 1024px) {
+  .titulocoberturas {
+    padding: 1px 10px;
   }
 }
 

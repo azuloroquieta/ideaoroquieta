@@ -348,6 +348,11 @@ footer {
     }
 }
 
+.textotratamiento{
+    @extend h1;
+    font-size: 72px;
+}
+
 .informacionvictoria {
     padding: 15px 25px;
 
@@ -358,12 +363,20 @@ footer {
 }
 
 .contenidocobertura {
-    padding: 80px 25px;
+    padding: 40px 25px;
 
     @include desktop {
-        padding: 280px 50px;
+        padding: 210px 50px;
     }
 
+}
+
+.titulocoberturas {
+    padding: 10px 25px;
+
+    @include desktop {
+       padding: 1px 10px;
+    }
 }
 
 .formulariocontacto {
