@@ -348,9 +348,14 @@ footer {
     }
 }
 
-.textotratamiento{
+.textotratamiento {
     @extend h1;
-    font-size: 72px;
+    font-size: 45px;
+
+    @include desktop {
+        @extend h1;
+        font-size: 72px;
+    }
 }
 
 .informacionvictoria {
@@ -375,7 +380,7 @@ footer {
     padding: 10px 25px;
 
     @include desktop {
-       padding: 1px 10px;
+        padding: 1px 10px;
     }
 }
 

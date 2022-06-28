@@ -319,7 +319,12 @@ footer {
 }
 
 .textotratamiento {
-  font-size: 72px;
+  font-size: 45px;
+}
+@media (min-width: 1024px) {
+  .textotratamiento {
+    font-size: 72px;
+  }
 }
 
 .informacionvictoria {
